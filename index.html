@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de control</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        p{
+            margin: 10px auto 0px;}
+        input{
+            margin: 10px auto 0px;
+            text-align: center;
+            padding: 0 15px;
+            border-radius: 10px;
+        }
+        h1{
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        button{
+            padding: 5px 15px;
+        }
+        nav{
+            background-color: black;
+            color: aliceblue;
+            padding-left: 20px;
+            height: 70px;
+        }
+        nav h2{
+            padding-top: 10px;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<header>
+    <nav class="nav">
+        <H2>Felipe Dulcey</H2>
+        <h4>Desarrollador Web</h4>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <h1>IF</h1>
+            <!--Condicional IF ELSE -->
+            <P>Saber si el usuario es menor o mayor segun su edad</P>
+            <input type="number" id="edad" placeholder="Ingrese su edad">
+            <input type="button" value="Enviar" id="enviar" onclick="edad()"><br>
+
+            <!--  -->
+            <p>Saber si un numero es mayor que otro</p>
+            <input type="number" id="numero1"><br><br>
+            <input type="number" id="numero2">
+            <input type="button" value="Enviar" onclick="mayor()">
+
+            <!--  -->
+            <P>Saber si un numero es multiplo de 2</P>
+            <input type="number" id="par" placeholder="Ingrese un numero">
+            <input type="button" value="Enviar" id="enviar" onclick="pares()"><br><br>
+            
+            <!-- Condicional SWICHT -->
+            <h1>Switch</h1>
+            <p>Saber el precio de una Fruta</p>
+            <p>Inventario <br></p>
+            <ul>
+                <li>Naranjas</li>
+                <li>Manzanas</li>
+                <li>Cerezas</li>
+                <li>Platanos</li>
+                <li>Mangos</li>
+                <li>Papayas</li>
+            </ul>
+            <input type="text" id="frutas" placeholder="Ingrese una Fruta">
+            <input type="button" value="Ingresa" onclick="frutas_precio()">
+
+            <!--  -->
+            <p>Saber si el animal subira al arca de Noe</p>
+            
+            <input type="text" id="animal" placeholder="Ingrese un animal">
+            <input type="button" value="Ingresar" onclick="noe()">
+
+            <!--  -->
+            <p>Saber una secuencia</p>
+            <input type="text" id="foo" placeholder="Ingrese un numero del 1-6">
+            <input type="button" value="Ingresar" onclick="secuencia4()">
+            
+            <!-- Bucle For -->
+
+            <H1>FOR</H1>
+            <p>Secuencia de Numeros del 1-10 con arreglos</p>
+            <input type="button" value="Iniciar" onclick="secuencia()">
+            <p id="mostrar-secuencia"></p>
+
+            <p>Secuencia de Numeros hasta donde el usuario diga</p>
+            <input type="number" placeholder="Ingrese un numero" id="numero_final">
+            <input type="button" value="Iniciar" onclick="secuencia2()">
+            <p id="mostrar-secuencia2"></p>
+
+            <p>Tabla de multiplicar</p>
+            <input type="number" placeholder="Ingrese un numero" id="numero_tabla">
+            <input type="button" value="Iniciar" onclick="secuencia3()">
+
+
+            <!-- Bucle While -->
+            <h1>While</h1>
+            <p>Secuencia del 1-10</p>
+            <input type="button" value="Iniciar" onclick="secuencia1w()">
+
+            <!--  -->
+            <p>Secuencia hasta el numero que ingrese el usuario</p>
+            <input type="number" placeholder="Ingresa un numero"  id="limite">
+            <input type="button" value="Iniciar" onclick="secuencia2w()">
+
+            <p>Tablas de Multiplicar</p>
+            <input type="number" placeholder="Ingresa un numero"  id="tabla">
+            <input type="button" value="Ingresar" onclick="secuencia3w()">
+
+    </div>
+    <Script src="../1_Ejercicio/funciones.js"></Script>
+</body>
+</html>
